@@ -1,0 +1,5 @@
+./build/main.o : src/main.f90 ./build/probin.o ./build/level.o ./build/sweeper.o 
+./build/level.o : src/level.f90  ./build/sweeper.o ./build/sleep_mili.o ./build/probin.o
+./build/sweeper.o : src/sweeper.f90 ./build/probin.o ./build/sleep_mili.o
+./build/probin.o : src/probin.f90 
+./build/sleep_mili.o : src/sleep_mili.f90

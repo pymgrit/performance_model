@@ -1,0 +1,36 @@
+&PF_PARAMS
+    nlevels  = 4
+    niters = 2
+    nnodes = 3 3 3 3
+    nsweeps_pred= 1 1 1 1
+    nsweeps= 1 1 1 1
+    abs_res_tol = -1
+    rel_res_tol = -1
+    Vcycle=.TRUE.
+    save_residuals=.FALSE.
+    save_errors=.FALSE.
+    save_delta_q0=.FALSE.
+    save_solutions=0
+    save_timings=1
+    outdir="libpfasst_"
+    PFASST_pred=.TRUE.
+    pipeline_pred=.FALSE.
+    nsweeps_burn=1
+ /
+ &PARAMS
+    nx = 500 500 500 500
+    Tfin = 1.0
+    nsteps = 4
+    ! 1000000 = 1sec
+    ! 100000 = 0.1sec
+    ! 10000 = 0.01sec
+    sleep_step = 20000 40000 60000 100000
+    sleep_f = 20 40 60 100
+    sleep_pro = 20 40 60 100
+    sleep_res = 20 40 60 100
+    lam1=1.0
+    lam2=-2.0
+    print_timings=1
+    get_runtimes=0
+ /
+
