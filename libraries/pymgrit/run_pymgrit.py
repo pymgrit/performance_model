@@ -1,6 +1,6 @@
 from pymgrit_app_time import PymgritAppTime
 from pymgrit_transfer_time import PymgritTransferTime
-from mgrit_implementation import Mgrit as MgritNew
+from pymgrit.core.mgrit import Mgrit
 import ast
 import sys
 
@@ -34,7 +34,7 @@ def run(nt, coarsening, nested_iter, cf_iter, sleep_step, iters, conv_crit, size
                                             size=size))
 
     MPI.COMM_WORLD.barrier()
-    mgrit = MgritNew(problem=problem,
+    mgrit = Mgrit(problem=problem,
                      transfer=transfer,
                      tol=-1,
                      max_iter=iters,

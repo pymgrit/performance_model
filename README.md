@@ -8,6 +8,14 @@ Python tool for task graph based performance analysis of parallel-in-time method
 
 are supported.
 
+The model was compared to the following parallel-in-time libraries:
+
+* PararealF90 [[4]](#4)
+* LibPFASST [[5]](#5)
+* PySDC [[6]](#6)
+* XBRAID [[7]](#7)
+* PyMGRIT [[8]](#8)
+
 ## References
 <a id="1">[1]</a> 
 Jacques-Louis Lions, Yvon Maday, and Gabriel Turinici. “Résolution d’EDP par un schéma en temps
@@ -23,3 +31,18 @@ pp. 105 –132.
 Robert D. Falgout, Stephanie Friedhoff, Tzanio Kolev, Scott MacLachlan, and Jacob B. Schroder.
 “Parallel time integration with multigrid”. In: SIAM Journal on Scientific Computing 36.6 (2014),
 pp. C635–C661.
+
+<a id="3">[4]</a> 
+https://github.com/Parallel-in-Time/PararealF90
+
+<a id="3">[5]</a> 
+https://github.com/libpfasst/LibPFASST
+
+<a id="3">[6]</a> 
+https://github.com/Parallel-in-Time/pySDC
+
+<a id="3">[7]</a> 
+https://www.llnl.gov/casc/xbraid
+
+<a id="3">[8]</a> 
+https://github.com/pymgrit/pymgrit
